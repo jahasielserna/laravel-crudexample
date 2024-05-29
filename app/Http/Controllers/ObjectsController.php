@@ -27,6 +27,13 @@ class ObjectsController
         $object->name = $request->input('name');
         $object->description = $request->input('description');
         $object->save();
+
+        return to_route('objects');
+    }
+
+    public function delete(TestObject $object) {
+
+        $object->delete();
         
         return to_route('objects');
     }

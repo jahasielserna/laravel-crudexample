@@ -1,5 +1,8 @@
 <form class="object-form" action="{{ $action }}" method="POST">
-    @csrf @method('PATCH')
+    @csrf
+    @if($method != 'POST')
+        @method($method)
+    @endif
     <div class="form-field">
         <label for="name">Name</label>
         <input type="text" name="name" id="name" value="{{ isset($object) ? $object->name : '' }}" required>

@@ -8,9 +8,10 @@
 @endsection
 
 @section('content')
-    <x-object-form action-label="Update" :object="$object" action="{{ route('create').'/'.$object->id }}"/>
+    <x-object-form action-label="Update" :object="$object" action="{{ route('update', ['object' => $object->id])}}" method="PATCH"/>
 
-    <form action="">
+    <form action="{{ route('delete', ['object' => $object->id]) }}" method="POST">
+        @csrf @method('DELETE')
         <button class="button prominent warning mt-3">
             <x-icons.delete/>
             Delete object
