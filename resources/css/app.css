@@ -1,0 +1,136 @@
+body {
+    font-family: 'Roboto';
+    margin: 0;
+    background: #F8F8F8;
+    color: #333;
+}
+.crudexample {
+    margin: auto;
+    max-width: 600px;
+    padding: 3rem 1.5rem;
+}
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.25rem;
+    border-radius: 0.5rem;
+    color: #333;
+    text-decoration: none;
+    font-size: 1rem;
+    cursor: pointer;
+    font-family: 'Roboto';
+    transition: background-color 0.3s;
+}
+.button svg {
+    width: 0.875rem;
+    height: 0.875rem;
+    object-fit: contain;
+}
+.button.primary {
+    border: 1px solid #E2E2E2;
+    background: #FFF;
+}
+.button.primary:hover, .button.secondary:hover {
+    background-color: #FAFAFA;
+}
+.button.secondary {
+    background: #FFF;
+    border: none;
+}
+.button.prominent {
+
+}
+.warning {
+    color: #D65555;
+}
+.mt-3 {
+    margin-top: 1rem;
+}
+.button.warning:hover {
+    background-color: #FFF8F8;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 2rem;
+}
+.header-date {
+    color: #808080;
+    font-weight: 0.875rem;
+}
+.page-heading {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.page-title {
+    margin: 0;
+    font-weight: 400;
+}
+.object-list {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.object, .object-form, .button.prominent {
+    background-color: #FFF;
+    border: 1px solid #E2E2E2;
+    border-radius: 0.75rem;
+}
+.object, .object-form {
+    padding: 1rem;
+}
+.object {
+    text-decoration: none;
+    transition: translate 0.3s;
+}
+.object:hover {
+    translate: 0.25rem;
+}
+.object-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 0.25rem;
+}
+.object-title {
+    font-weight: 500;
+    color: #333;
+}
+.object-date, .object-description {
+    font-size: 0.875em;
+    color: #808080;
+}
+.object-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 1rem;
+}
+.form-field {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.125rem;
+}
+.form-field label {
+    color: #666666;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+.form-field input, .form-field textarea {
+    border-radius: 0.25rem;
+    border: 1px solid #AAAAAA;
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+.form-field textarea {
+    resize: none;
+    font-family: 'Roboto';
+}
